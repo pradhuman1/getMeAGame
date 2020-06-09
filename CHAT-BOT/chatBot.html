@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./chatBot.css">
+        <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, user-scalable=no" />            
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+        <link href="https://fonts.googleapis.com/css2?family=Montaga&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+
+        </header>
+        <div class="Container">
+            <div class="left">
+                <div class="chat-area">
+<!-- 
+                    <div class="botChat">
+                        <div class="botMsg waiting">
+                            
+                            <div class="ticontainer">
+                                <div class="tiblock">
+                                  <div class="tidot"></div>
+                                  <div class="tidot"></div>
+                                  <div class="tidot"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <div class="botChat">
+                        <div class="botMsg">
+                            Hello
+                        </div>
+                    </div>
+                    <div class="botChat">
+                        <div class="botMsg options">
+                            How can I help you: <br><br>
+                            <button class="choice" id="recommend">Recommend me a game</button>
+                            <button class="choice" id="giveInfo">Get info about a game</button>       
+                        </div>
+                    </div>
+                    <!-- <div class="userChat">
+                        <div class="userMsg">
+                            Hi
+                        </div>
+                    </div>
+                    <div class="userChat">
+                        <div class="userMsg">
+                                
+                            recommend me a game
+                        </div>
+                    </div> -->
+                    <!-- <div class="botChat">
+                        <div class="botMsg result" id="result-1">
+                            <div class="card" id="gameCard-small">
+                                <img src="%imgUrl%" class="smallImg" id="game-slug">                                
+                                %gameName%
+                            </div>
+                        </div>
+                        <div class="tellTo-getInfo" style="font-family:'Ubuntu', sans-serif">Click on card to get detailed information</div>                            
+                        
+                    </div> -->
+                    <!-- <div class="msg-input"> -->
+                    <!-- </div> -->
+                </div>
+                <div class="input-area">
+                    <div class="suggestion-box-outer">
+                        <div class="suggestion-box">
+                            <button style="background-color:transparent;border:0px;text-align:center;padding-left:50%;padding-right:48%;outline:none;cursor:pointer">
+                                <!-- <img src="./upArrow.png" height="20px"> -->
+                                <img src="./downArrow.png" height="20px">
+                                
+                            </button>
+                            <div class="sugg-area" style="max-height:100px;overflow:scroll">
+                                <!-- <div class="suggestion">sug 1</div>
+                                <div class="suggestion">sug 1</div>
+                                <div class="suggestion">sug 1</div>
+                                <div class="suggestion">sug 1</div>
+                                <div class="suggestion">sug 1</div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <input placeholder="Type Something" class="userInput">                
+                </div>
+            </div>
+        </div>
+        <div class="popup">
+            <div class="zoomedCard">
+                <div class="cardLeft">
+                    <div class="firstBlock">
+                        <div class="image">
+                            <!-- <img src="" class="cover-img"> -->
+                        </div>
+                        <button type="button" class="btn btn-warning">
+                        <i class="fa fa-thumb-tack" aria-hidden="true"></i>
+                            
+                        Pin
+                        </button>
+                        <form class="buy">
+                            <button type="button" class="btn btn-danger">Buy
+                        </button>
+                        </form>
+                        <div class="selectingStore">Select Store</div>
+                        <hr class="zoomed-card">
+                        <div class="stores">
+                            <!-- <div class="store" id="playstation" >Playstation</div>
+                            <div class="store" id="xbox">Xbox</div>
+                            <div class="store" id="steam">Steam</div>
+                            <div class="store" id="epicgames">Epic-Games</div> -->
+                            <!-- <div class="store five">Store-1</div> -->
+                        </div>
+                    </div>
+                    <div class="secondBlock">
+                        Playable On
+                        <hr class="zoomed-card">
+                        <div class="platforms"> 
+                            <!-- <div class="platform" id="playstation">PlayStation 4</div>
+                            <div class="platform">Xbox one</div>
+                            <div class="platform">PC</div> 
+                            <div class="platform">PlayStation 3</div>        
+                            <div class="platform">Xbox 360</div>        
+                            <div class="platform">Nintendo Switch</div>         -->
+                                   
+                        </div>                
+                    </div>
+                </div>
+                <div class="cardRight">
+                    <div class="game-title">
+                        Grand theft Auto 5
+                    </div>
+                    <div class="someInfo">
+                        <div class="releaseDate">
+                            Released on yyyy-mm-dd
+                        </div>
+                        <div class="verticleLine">
+
+                        </div>
+                        <div class="rating">
+                            4.48/5.00
+                        </div>
+                        <div class="rating-count">
+                            3798 Ratings
+                        </div>
+                    </div>
+                    <hr class="zoomed-card">
+                    <div class="screen">
+                        
+                    </div>
+                    <div class="preview">
+                        <button class="btn-left"> < </button>
+                        <div class="previewCards">
+                            <!-- <div class="preview-card">
+        
+                            </div> -->
+                        </div>
+                        <button class="btn-right"> > </button>                        
+                    </div>
+                    <div class="Rate-review">
+                        <div class="giveRating">
+                            Rate Game
+                            <div class="starReview">
+                                <span class="fa fa-star " id="1-star"></span>
+                                <span class="fa fa-star " id="2-star"></span>
+                                <span class="fa fa-star " id="3-star"></span>
+                                <span class="fa fa-star " id="4-star"></span>
+                                <span class="fa fa-star " id="5-star"></span>                    
+                            </div>
+                            <hr class="zoomed-card">
+                            Review Game
+                            <textarea class="giveComment" placeholder="Give Comments.."></textarea> 
+                            <button class="submit-reviews">Submit</button>                           
+                        </div>
+                        <hr class="zoomed-card">
+                        Comments
+                        <div class="comments">
+                            No Comment Yet!
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </body>
+    <script>
+        var globalData;
+    </script>
+    <script type="text/javascript" src="./chatBot.js"></script>
+    <script type="text/javascript" src="./zoomedCard.js"></script>
+</html>
