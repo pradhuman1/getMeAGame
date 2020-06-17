@@ -1,19 +1,37 @@
 {
-  "name": "GetMeAGame",
+  "name": "getMeAGame",
   "version": "1.0.0",
   "description": "",
-  "main": "test.js",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon --exec yarn restart",
+    "build": "babel CHAT-BOT --out-dir dist --copy-files",
+    "restart": "rimraf dist && yarn build && yarn start",
+    "start": "node dist/src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pradhuman1/getMeAGame.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pradhuman1/getMeAGame/issues"
+  },
+  "homepage": "https://github.com/pradhuman1/getMeAGame#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.7",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-preset-env": "^1.7.0"
+  },
   "dependencies": {
-    "cors": "^2.8.5",
-    "fetch": "^1.1.0",
-    "mongoose": "^5.9.18",
-    "node-fetch": "^2.6.0",
-    "nodemon": "^2.0.4"
+    "@babel/plugin-proposal-class-properties": "^7.10.1",
+    "@babel/plugin-proposal-object-rest-spread": "^7.10.1",
+    "@babel/preset-env": "^7.10.2",
+    "nodemon": "^2.0.4",
+    "rimraf": "^3.0.2"
   }
 }
